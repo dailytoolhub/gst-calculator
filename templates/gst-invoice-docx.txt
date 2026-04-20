@@ -1,0 +1,43 @@
+GST INVOICE TEMPLATE (WORD)
+============================
+
+Invoice No.: ___________
+Date: ___________
+
+FROM (Seller):
+_______________
+_______________
+GSTIN: ___________
+
+TO (Buyer):
+_______________
+_______________
+GSTIN: ___________
+
+Item Details:
+-----------
+Sr | Description      | HSN   | Qty  | Rate    | Taxable Value | GST Rate | GST Amount | Total
+---|--------------|-------|------|------|-----------|--------|----------|-------
+1  |              |       |      |      |           |        |          |
+2  |              |       |      |      |           |        |          |
+3  |              |       |      |      |           |        |          |
+4  |              |       |      |           |        |          |
+5  |              |       |      |           |        |          |
+
+Subtotal: ___________
+Discount: ___________
+CGST (9%): ___________
+SGST (9%): ___________
+IGST (____%): ___________
+TOTAL: ___________
+
+Bank Details:
+Bank Name: ___________
+Account No.: ___________
+IFSC: ___________
+
+Authorized Signature
+=================
+
+---
+Template by GST Calculator Hub

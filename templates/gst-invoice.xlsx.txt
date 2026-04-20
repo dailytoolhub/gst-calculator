@@ -1,0 +1,20 @@
+GST INVOICE - EXCEL TEMPLATE
+Invoice No.,Date,Seller Name,Seller Address,Seller GSTIN,Buyer Name,Buyer Address,Buyer GSTIN
+,,,,,,,,
+Item No.,Description,HSN Code,Quantity,Rate,Taxable Value,GST Rate (%),GST Amount,Total
+1,,,,,,
+2,,,,,,
+3,,,,,,
+4,,,,,,
+5,,,,,,
+SUBTOTAL,,,,,,0,,0
+Discount,,,,,,,
+CGST (9%),,,,,,0
+SGST (9%),,,,,,0
+IGST (%),,,,,,0
+GRAND TOTAL,,,,,,,
+
+Bank Details:
+Bank Name,Account Number,IFSC Code
+
+Format for Excel import - columns A to I
