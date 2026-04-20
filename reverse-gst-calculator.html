@@ -105,9 +105,9 @@
                     <span class="font-bold text-xl tracking-tight">GST Calc <span class="text-secondary">Hub</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="#" class="text-primary dark:text-secondary">Calculator</a>
+                    <a href="index.html" class="text-primary dark:text-secondary">GST Calculator</a>
+                    <a href="18-percent-calculator.html" class="hover:text-primary dark:hover:text-secondary transition">18% GST</a>
                     <a href="#about" class="hover:text-primary dark:hover:text-secondary transition">How it Works</a>
-                    <a href="#faq" class="hover:text-primary dark:hover:text-secondary transition">FAQs</a>
                 </div>
                 <div class="flex items-center gap-4">
                     <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
@@ -129,8 +129,8 @@
     <!-- Main App Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="text-center mb-10">
-            <h1 class="text-3xl md:text-5xl font-extrabold text-primary dark:text-white mb-4">Free GST Calculator India</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-400">Instantly calculate inclusive and exclusive GST, along with CGST, SGST, and IGST breakdowns.</p>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-primary dark:text-white mb-4">Reverse GST Calculator India (GST 2.0 - 2026)</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Extract base amount and GST from inclusive prices. Updated rates as per 56th GST Council.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -157,13 +157,12 @@
 
                 <!-- GST Slabs -->
                 <div class="mb-6">
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">GST Rate (%)</label>
-                    <div class="grid grid-cols-5 gap-2">
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(3, this)" disabled class="slab-btn bg-gray-100 dark:bg-gray-800 opacity-40 cursor-not-allowed font-semibold py-3 rounded-lg border-2 border-transparent transition-all" disabled aria-disabled="true">3%</button>
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(5, this)" disabled class="slab-btn bg-gray-100 dark:bg-gray-800 opacity-40 cursor-not-allowed font-semibold py-3 rounded-lg border-2 border-transparent transition-all" disabled aria-disabled="true">5%</button>
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(12, this)" disabled class="slab-btn bg-gray-100 dark:bg-gray-800 opacity-40 cursor-not-allowed font-semibold py-3 rounded-lg border-2 border-transparent transition-all" disabled aria-disabled="true">12%</button>
-                        <button class="slab-btn bg-primary text-white border-primary font-semibold py-3 rounded-lg border-2 transition-all shadow-md" onclick="setRate(18, this)" class="slab-btn bg-primary text-white border-primary font-semibold py-3 rounded-lg border-2 transition-all shadow-md">18%</button>
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(28, this)" disabled class="slab-btn bg-gray-100 dark:bg-gray-800 opacity-40 cursor-not-allowed font-semibold py-3 rounded-lg border-2 border-transparent transition-all" disabled aria-disabled="true">28%</button>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">GST Rate (%) - 2026 Updated</label>
+                    <div class="grid grid-cols-4 gap-2">
+                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(0, this)">0%</button>
+                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(5, this)">5%</button>
+                        <button class="slab-btn bg-primary text-white border-primary font-semibold py-3 rounded-lg border-2 transition-all shadow-md" onclick="setRate(18, this)">18%</button>
+                        <button class="slab-btn bg-red-600 text-white border-red-600 font-semibold py-3 rounded-lg border-2 transition-all shadow-md" onclick="setRate(40, this)">40%</button>
                     </div>
                 </div>
 

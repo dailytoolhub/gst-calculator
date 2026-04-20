@@ -130,8 +130,8 @@
     <!-- Main App Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="main-content" role="main">
         <div class="text-center mb-10">
-            <h1 class="text-3xl md:text-5xl font-extrabold text-primary dark:text-white mb-4">Free GST Calculator India</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-400">Instantly calculate inclusive and exclusive GST, along with CGST, SGST, and IGST breakdowns.</p>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-primary dark:text-white mb-4">Free GST Calculator India (GST 2.0 - 2026)</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Calculate inclusive & exclusive GST with CGST, SGST, IGST. Updated rates as per 56th GST Council meeting.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -156,15 +156,14 @@
                     </div>
                 </div>
 
-                <!-- GST Slabs -->
+                <!-- GST Slabs (GST 2.0 - 2026) -->
                 <div class="mb-6">
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">GST Rate (%)</label>
-                    <div class="grid grid-cols-5 gap-2">
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(3, this)">3%</button>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">GST Rate (%) - 2026 Updated</label>
+                    <div class="grid grid-cols-4 gap-2">
+                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(0, this)">0%</button>
                         <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(5, this)">5%</button>
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(12, this)">12%</button>
                         <button class="slab-btn bg-primary text-white border-primary font-semibold py-3 rounded-lg border-2 transition-all shadow-md" onclick="setRate(18, this)">18%</button>
-                        <button class="slab-btn bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold py-3 rounded-lg border-2 border-transparent transition-all" onclick="setRate(28, this)">28%</button>
+                        <button class="slab-btn bg-red-600 text-white border-red-600 font-semibold py-3 rounded-lg border-2 transition-all shadow-md" onclick="setRate(40, this)">40%</button>
                     </div>
                 </div>
 
@@ -288,42 +287,47 @@
             <li><strong>Inter-State Sales (Between two different states):</strong> Integrated GST (IGST) is applied, which is collected by the Central Government. <em>Example: The full 18% is applied as IGST.</em></li>
         </ul>
 
-        <h3 class="text-2xl font-semibold mt-8 mb-4">Current GST Slabs in India (2026)</h3>
+        <h3 class="text-2xl font-semibold mt-8 mb-4">GST 2.0 Slabs in India (2026)</h3>
         <table class="w-full text-left border-collapse mt-4">
             <thead>
                 <tr class="bg-gray-100 dark:bg-gray-800 border-b dark:border-gray-700">
-                    <th class="p-3 font-semibold">Tax Rate</th>
-                    <th class="p-3 font-semibold">Common Goods & Services</th>
+                    <th class="p-3 font-semibold">GST Rate</th>
+                    <th class="p-3 font-semibold">Common Goods & Services (Updated April 2026)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="border-b dark:border-gray-700">
-                    <td class="p-3"><strong>0% (Exempt)</strong></td>
-                    <td class="p-3">Fresh fruits, vegetables, milk, printed books, unbranded wheat.</td>
+                    <td class="p-3"><strong>0% (Nil)</strong></td>
+                    <td class="p-3">Fresh fruits, vegetables, milk, eggs, fresh bread, unbranded dairy, 33 lifesaving drugs, education materials.</td>
                 </tr>
                 <tr class="border-b dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
-                    <td class="p-3"><strong>5%</strong></td>
-                    <td class="p-3">Apparel under ₹1000, footwear under ₹500, packaged food, economy flights.</td>
-                </tr>
-                <tr class="border-b dark:border-gray-700">
-                    <td class="p-3"><strong>12%</strong></td>
-                    <td class="p-3">Computers, processed food, business class air tickets, standard hotel rooms.</td>
+                    <td class="p-3"><strong>5% (Essential)</strong></td>
+                    <td class="p-3">Packaged food, toilet soap, toothpaste, shampoo, bicycles, small appliances, fertilizers, tractors.</td>
                 </tr>
                 <tr class="border-b dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
                     <td class="p-3"><strong>18% (Standard)</strong></td>
-                    <td class="p-3">IT services, financial services, telecom, electronics, capital goods.</td>
+                    <td class="p-3">Electronics, phones, laptops, TVs, small cars, bikes, IT services, telecom, restaurants, textiles.</td>
                 </tr>
                 <tr>
-                    <td class="p-3"><strong>28%</strong></td>
-                    <td class="p-3">Luxury cars, aerated drinks, tobacco, 5-star hotels, betting.</td>
+                    <td class="p-3"><strong>40% (Luxury/Sin)</strong></td>
+                    <td class="p-3">Luxury cars, aerated drinks, tobacco, cigarettes, online gaming, betting, casinos, premium hotels.</td>
                 </tr>
             </tbody>
         </table>
+        <p class="text-sm text-gray-500 mt-2"><em>Note: GST 2.0 rates effective from September 22, 2025. Most 12% items moved to 5%, most 28% items moved to 18%.</em></p>
 
         <!-- FAQ Section -->
-        <h3 id="faq" class="text-2xl font-semibold mt-12 mb-6 border-b pb-2">Frequently Asked Questions (FAQ)</h3>
+        <h3 id="faq" class="text-2xl font-semibold mt-12 mb-6 border-b pb-2">Frequently Asked Questions (2026)</h3>
         
         <div class="space-y-4">
+            <details class="group bg-white dark:bg-darkcard rounded-lg border border-gray-200 dark:border-gray-700 p-4 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center text-gray-900 dark:text-gray-100">
+                    What are the new GST rates in 2026?
+                    <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <p class="mt-4 text-gray-600 dark:text-gray-400">GST 2.0 (effective September 2025) simplified slabs to 0%, 5%, 18%, and 40%. The 12% and 28% slabs have been largely removed. Most essentials are now at 5%, standard goods at 18%, and luxury/sin goods at 40%.</p>
+            </details>
+
             <details class="group bg-white dark:bg-darkcard rounded-lg border border-gray-200 dark:border-gray-700 p-4 cursor-pointer">
                 <summary class="font-bold flex justify-between items-center text-gray-900 dark:text-gray-100">
                     Is this GST calculator free to use?
@@ -342,10 +346,18 @@
 
             <details class="group bg-white dark:bg-darkcard rounded-lg border border-gray-200 dark:border-gray-700 p-4 cursor-pointer">
                 <summary class="font-bold flex justify-between items-center text-gray-900 dark:text-gray-100">
-                    How do I generate a PDF of my calculation?
+                    What items are at 0% GST?
                     <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
                 </summary>
-                <p class="mt-4 text-gray-600 dark:text-gray-400">Simply enter your values in the calculator, select your slab, and click the "Save PDF" button in the results panel. It will instantly download an invoice-style summary.</p>
+                <p class="mt-4 text-gray-600 dark:text-gray-400">Essential items like fresh fruits, vegetables, milk, eggs, unbranded dairy products, fresh bread, educational materials, and 33 lifesaving drugs are now at 0% GST under GST 2.0.</p>
+            </details>
+
+            <details class="group bg-white dark:bg-darkcard rounded-lg border border-gray-200 dark:border-gray-700 p-4 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center text-gray-900 dark:text-gray-100">
+                    What is the 40% GST rate?
+                    <i data-lucide="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <p class="mt-4 text-gray-600 dark:text-gray-400">The 40% rate applies to luxury and "sin" goods like premium cars, aerated beverages, tobacco products, online gaming, betting, and casinos. This replaced the old 28% + compensation cess structure.</p>
             </details>
         </div>
     </article>
@@ -389,7 +401,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-sm text-gray-500">
-                &copy; 2026 GST Calculator Hub India. All rights reserved. Not affiliated with the Indian Government.
+                &copy; 2026 GST Calculator Hub India. GST 2.0 Updated. Not affiliated with the Indian Government.
             </div>
         </div>
     </footer>
@@ -399,9 +411,9 @@
         // Initialize Icons
         lucide.createIcons();
 
-        // State variables
+        // State variables (GST 2.0 - 2026)
         let mode = 'add'; // 'add' or 'remove'
-        let currentRate = 18;
+        let currentRate = 18; // Default 18% as per GST 2.0
 
         // Formatter for Indian Rupees
         const formatINR = (number) => {
@@ -481,8 +493,12 @@
             document.getElementById('resTax').innerText = formatINR(gstAmount);
             document.getElementById('resRateTxt').innerText = currentRate;
 
-            // Handle Breakdown
-            if (stateType === 'intra') {
+            // Handle Breakdown (GST 2.0 - 2026)
+            if (currentRate === 0) {
+                // 0% GST - no breakdown needed
+                document.getElementById('breakdownIntra').classList.add('hidden');
+                document.getElementById('breakdownInter').classList.add('hidden');
+            } else if (stateType === 'intra' && currentRate <= 18) {
                 document.getElementById('breakdownIntra').classList.remove('hidden');
                 document.getElementById('breakdownInter').classList.add('hidden');
                 
@@ -494,6 +510,7 @@
                 document.getElementById('resCgst').innerText = formatINR(halfGst);
                 document.getElementById('resSgst').innerText = formatINR(halfGst);
             } else {
+                // Inter-state or 40% rate
                 document.getElementById('breakdownIntra').classList.add('hidden');
                 document.getElementById('breakdownInter').classList.remove('hidden');
                 
